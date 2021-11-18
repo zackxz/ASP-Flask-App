@@ -14,9 +14,9 @@ namespace AspNetCoreWebServiceTest.Controllers
         }
 
         [Theory]
-        [InlineData(null, "Hello !")]
-        [InlineData("", "Hello !")]
-        [InlineData("AWS CodeStar", "Hello AWS CodeStar!")]
+        [InlineData(null, "Hello !!!")]
+        [InlineData("", "Hello !!!")]
+        [InlineData("AWS CodeStar", "Hello AWS CodeStar!!!")]
         public void InputParamGetResponseTest(string inputValue, string expectedOutput)
         {
             HelloController controller = new HelloController();
